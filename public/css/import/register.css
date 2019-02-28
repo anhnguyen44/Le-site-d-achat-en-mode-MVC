@@ -1,0 +1,35 @@
+#register-form label{display: block; margin-top: 20px; margin-bottom: 10px;font-size: 16px;}
+#register-form input[type='text'], #register-form input[type='password'], #register-form input{
+    border-radius: 5px;
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #d4d4d4;
+    width: 100%;
+}
+#register-form #btn_reg{
+    display: block;
+    margin: 20px 0px;
+    background: #c22625;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+#register-form .error_form{
+    color: red;
+    font-style: italic;
+}
+
+#register-form{
+    width: 600px;
+    margin: 0px auto;
+    padding: 0px 40px;
+}
+
+#register-form h1{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+}

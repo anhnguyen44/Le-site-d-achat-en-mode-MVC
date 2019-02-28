@@ -1,0 +1,22 @@
+RewriteEngine On
+
+RewriteRule ^([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?mod=page&controller=index&action=detail&id=$2&slug=$1
+
+RewriteRule ^cat/([0-9]+)/([a-zA-Z0-9_-]+)-([0-9]?).html$ index.php?mod=product&controller=index&action=index&id=$1&page=$3&slug=$2
+
+RewriteRule ^user/([0-9]+)$ index.php?mod=users&action=index&id=$1
+
+RewriteRule ^user/edit/([0-9]+)$ index.php?mod=users&action=edit&id=$1
+
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?
+
+RewriteRule ^login$ index.php?mod=users&controller=index&action=login
+
+RewriteRule ^register$ index.php?mod=users&controller=index&action=add
+
+RewriteRule ^product/([0-9]+)/([a-zA-Z0-9_-]+).html$ index.php?mod=product&action=detail&id=$1
+
+RewriteRule ^cart$ index.php?mod=cart&action=index
+
+RewriteRule ^checkout$ index.php?mod=cart&action=checkout
+

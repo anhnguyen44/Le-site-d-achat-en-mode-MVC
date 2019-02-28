@@ -1,0 +1,11 @@
+#user_logout{
+    float: left;
+    position: relative;
+    top: 20px;
+}
+#user_logout p>a{
+    color: #333;
+}
+#user_logout p>a:hover{
+    color: #70adf9;
+}
